@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Form
 {
     //Definir los datos que va a contener el formulario.
@@ -16,5 +17,13 @@ public class Form
     //estado de realizacion
     //Lista de actividades a revisar
     //Puntaje final
+
+    public int relevamientosID;
+    public int clientID;
+    public string clientName;
+    public int locationID;
+    public string locationName;
+    public string locationAddress;
+    public List<Activity> relevamientos;
 
 }

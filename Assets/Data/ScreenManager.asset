@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184f718e1d3b18a41baf0bb763c5d625, type: 3}
+  m_Name: ScreenManager
+  m_EditorClassIdentifier: 
+  listadoFormPanel_prefab: {fileID: 5728737085378592, guid: 4a3ca6345358b414d8919449668a492b,
+    type: 3}
+  listadoActivityFormPanel_prefab: {fileID: 403279709593886443, guid: 6d31fd13ffe14084ca913ad6dba25374,
+    type: 3}
+  activityPanel_prefab: {fileID: 5285636404364991461, guid: d73ffb57bfa97bc4f95acc943c50676a,
+    type: 3}
+  mainMenuPanel_prefab: {fileID: 8540317644606656038, guid: 2213e9b6adf097248a452e94874d6820,
+    type: 3}
+  appData: {fileID: 11400000, guid: 84e76b32277656643a8db24879a8f6b8, type: 2}
