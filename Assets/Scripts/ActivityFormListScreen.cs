@@ -20,13 +20,16 @@ public class ActivityFormListScreen : PanelDeListado
 
         foreach (var form in appData.unfinishedForms)
         {
-            if(form.relevamientosID == appData.currentFormID)
+            if(form.id == appData.currentFormID)
             {
-                foreach (var activity in form.relevamientos)
+                foreach (var activity in form.activities)
                 {
+                    Debug.Log("El ID de esta actividad es: " + activity.id);
+                    
                     Button newButton = Instantiate(activityButton_prefab, listContainer.transform);
+                    newButton.onClick.AddListener(delegate { appData.currentActivityID  = activity.id; });
                     newButton.onClick.AddListener(delegate { screenManager.ChangePanel(ScreenManager.ScreenType.activity); });
-                    newButton.gameObject.GetComponentInChildren<Text>().text = activity.activityName;
+                    newButton.gameObject.GetComponentInChildren<Text>().text = activity.title;
                     botones.Add(newButton);
                 }
             }

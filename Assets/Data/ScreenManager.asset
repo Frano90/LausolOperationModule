@@ -20,4 +20,6 @@ MonoBehaviour:
     type: 3}
   mainMenuPanel_prefab: {fileID: 8540317644606656038, guid: 2213e9b6adf097248a452e94874d6820,
     type: 3}
+  logInPanel_prefab: {fileID: 2935825363907575331, guid: 474c5128417ed4e47861911b665c0c2e,
+    type: 3}
   appData: {fileID: 11400000, guid: 84e76b32277656643a8db24879a8f6b8, type: 2}

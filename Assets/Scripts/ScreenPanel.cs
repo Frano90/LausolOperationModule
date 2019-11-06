@@ -7,16 +7,24 @@ public class ScreenPanel : MonoBehaviour
 {
     //Es la clase del tipo pantalla. 
     //Todas las pantallas de la app heredan de aca.
+    [HideInInspector]
     public string panelName;
+    
+    [HideInInspector]
     public AppData appData;
+    
+    [HideInInspector]
     public ScreenManager screenManager;
+    
     public ScreenManager.ScreenType panelType;
+    
+    [HideInInspector]
     public Button prevButton;
+    
     internal List<Button> botones = new List<Button>();
 
     internal virtual void Awake()
     {
-        Debug.Log("Apalapapa");
         if (prevButton != null)
             prevButton.onClick.AddListener(screenManager.GoToPreviousScreen);
     }

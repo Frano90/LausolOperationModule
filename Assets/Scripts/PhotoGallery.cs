@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PhotoGallery : ScreenPanel
 {
     public GameObject container;
-    List<Texture2D> pics = new List<Texture2D>();
+    public List<Texture2D> pics = new List<Texture2D>();
 
     public void OnEnable()
     {

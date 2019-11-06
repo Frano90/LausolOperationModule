@@ -6,7 +6,7 @@ public class PanelDeListado : ScreenPanel
 {
     public GameObject listContainer;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         PopulateList();
     }

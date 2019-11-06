@@ -12,6 +12,7 @@ public class ScreenManager : ScriptableObject
     public ScreenPanel listadoActivityFormPanel_prefab;
     public ScreenPanel activityPanel_prefab;
     public ScreenPanel mainMenuPanel_prefab;
+    public ScreenPanel logInPanel_prefab;
     Canvas canvas;
 
     ScreenType prevScrenPanel;
@@ -23,7 +24,7 @@ public class ScreenManager : ScriptableObject
         canvas = FindObjectOfType<Canvas>();
 
         RemoveCurrentScreenPanel();
-        currentPanel = ChangePanel(ScreenType.mainMenu);
+        currentPanel = ChangePanel(ScreenType.logIn);
     }
 
 
@@ -45,6 +46,9 @@ public class ScreenManager : ScriptableObject
                 break;
             case ScreenType.mainMenu:
                 newScreen = Instantiate(mainMenuPanel_prefab, canvas.transform);
+                break;
+            case ScreenType.logIn:
+                newScreen = Instantiate(logInPanel_prefab, canvas.transform);
                 break;
             default:
                 break;
@@ -70,7 +74,6 @@ public class ScreenManager : ScriptableObject
 
     public void GoToPreviousScreen()
     {
-        Debug.Log("Vuelvooo");
         ScreenType newScreen = default;
 
         switch (currentPanel.panelType)
@@ -100,6 +103,7 @@ public class ScreenManager : ScriptableObject
         formActivity,
         activity,
         mainMenu,
-        gallery
+        gallery,
+        logIn
     }
 }

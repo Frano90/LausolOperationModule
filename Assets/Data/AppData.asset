@@ -13,28 +13,83 @@ MonoBehaviour:
   m_Name: AppData
   m_EditorClassIdentifier: 
   unfinishedForms:
-  - relevamientosID: 1
-    clientID: 25
-    clientName: Galicia
-    locationID: 54
-    locationName: Sucursal 4
-    locationAddress: Cullen 222
-    relevamientos:
-    - activityName: Limpiar vidrios
-      score: 0
-      imagenes: []
-      supervisorObs: 
-      serverObs: 
-    - activityName: Limpiar alfombra
-      score: 0
-      imagenes: []
-      supervisorObs: 
-      serverObs: 
-    - activityName: Arreglar espejo
-      score: 0
-      imagenes: []
-      supervisorObs: 
-      serverObs: 
-  finishedForms: []
+  - id: 1
+    client_id: 19
+    client_name: Galicia Seguros S.A.
+    location_id: 128
+    location_name: Esmeralda
+    location_address: "Esmeralda 31\nC.A.B.A, Ciudad Aut\xF3noma de Buenos Aires"
+    creation_date: 2019-09-07
+    expiration_date: 2019-09-30
+    completion_date: 
+    total_score: 0
+    activities:
+    - id: 1
+      start_date: 
+      completion_date: 
+      title: Limpiar vidrios
+      detail: "otra vez gan\xF3 boca y hay que sacar los graffitis"
+      response_message: cacacdwaer
+      response_score: 0
+      images: []
+    - id: 2
+      start_date: 
+      completion_date: 
+      title: Lustrar pisos
+      detail: "vino una comisi\xF3n de gendarmes a sacar a los de boca y qued\xF3
+        todo sucio"
+      response_message: 
+      response_score: 3
+      images: []
+  - id: 2
+    client_id: 35
+    client_name: Banco de Galicia y Buenos Aires SAU
+    location_id: 148
+    location_name: 1 Balvanera
+    location_address: "Av. Rivadavia 2330\nC.A.B.A, Ciudad Aut\xF3noma de Buenos Aires"
+    creation_date: 2019-09-06
+    expiration_date: 2019-09-30
+    completion_date: 
+    total_score: 0
+    activities:
+    - id: 3
+      start_date: 
+      completion_date: 
+      title: Sacar la basura
+      detail: "hay unos murder hobos con un druida/b\xE1rbaro transformado en tortuga,
+        ojo"
+      response_message: 
+      response_score: 4
+      images: []
+    - id: 4
+      start_date: 
+      completion_date: 
+      title: Levelear
+      detail: "Juanjo mand\xF3 el formulario FJ-335 firmado, adjudicarle un nivel"
+      response_message: 
+      response_score: 2
+      images: []
+  finishedForms:
+  - id: 23
+    client_id: 151
+    client_name: caca
+    location_id: 4444
+    location_name: fefgd
+    location_address: dsfsf
+    creation_date: 1231
+    expiration_date: 123
+    completion_date: 123
+    total_score: 4
+    activities:
+    - id: 677
+      start_date: 
+      completion_date: 
+      title: Cagar
+      detail: ljdnlwe
+      response_message: few
+      response_score: 2
+      images: []
   user: Carlos Ruben
   currentFormID: 1
+  currentActivityID: 1
+  token: eyJhbGciOiJIUzI1NiJ9.WzIsImZyYW5vLmNyaXNjdW9sb0BnbWFpbC5jb20iXQ.qO_ilLdGRkdDQbPDss0GISy-2icjxlkb-jimdQza8Kw

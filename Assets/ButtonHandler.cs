@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour
 {
+    public AppData appData;
+    
     [Header("Setup")]
     public HttpRequester httpRequester;
     public TextMeshProUGUI result;
@@ -38,6 +40,7 @@ public class ButtonHandler : MonoBehaviour
 
     private void UpdateResultText(string requestResponse)
     {
-        result.text = requestResponse;
+        appData.AddNewFormToUnfinishedFormsList(requestResponse);
+        //result.text = requestResponse;
     }
 }

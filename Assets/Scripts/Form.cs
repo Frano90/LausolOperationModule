@@ -18,12 +18,17 @@ public class Form
     //Lista de actividades a revisar
     //Puntaje final
 
-    public int relevamientosID;
-    public int clientID;
-    public string clientName;
-    public int locationID;
-    public string locationName;
-    public string locationAddress;
-    public List<Activity> relevamientos;
+
+    public int id;
+    public int client_id;
+    public string client_name;
+    public int location_id;
+    public string location_name;
+    public string location_address;
+    public string creation_date;
+    public string expiration_date;
+    public string completion_date;
+    public int total_score;
+    public Activity[] activities;
 
 }
